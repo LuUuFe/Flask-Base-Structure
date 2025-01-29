@@ -1,0 +1,26 @@
+{% extends 'index.html' %}
+
+{% block title %}Users{% endblock %}
+
+{% block content %}
+
+<div class="my-5">
+
+    <div class="d-grid gap-2 mb-2 d-md-block">
+        <a href="{{ url_for('main.user') }}" class="btn btn-secondary btn-sm">Back users</a>
+    </div>
+
+    <h2 class="mb-3 text-center text-body-emphasis">Edit a user</h2>
+
+    <form class="m-auto" method="POST" action="{{ url_for('main.user_edit', id=user.id) }}" novalidate>
+
+        {{ form.hidden_tag() }}
+
+        {% include 'pages/user/form.html' %}
+
+    </form>
+
+</div>
+
+
+{% endblock %}
