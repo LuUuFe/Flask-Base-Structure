@@ -1,6 +1,6 @@
 # Flask School System
 
-This project is a basic school management system developed with Flask, enabling the management of students, teachers, disciplines, and courses. It demonstrates best practices in using Flask with SQLAlchemy, Flask-WTF forms, and an organized project structure.
+Basic structure of a Flask project divided into folders, similar to the MVC pattern, but I prefer to call it MVFC (Models, Views, Forms and Controllers).
 
 ---
 
@@ -16,23 +16,13 @@ This project is a basic school management system developed with Flask, enabling 
 
 ---
 
-## Features
-
-- Registration of students, teachers, disciplines, and courses.
-- Relationships between entities, including:
-  - Many-to-many between teachers and disciplines.
-  - Direct associations with courses.
-- Simple interface for registering and viewing the data.
-
----
-
 ## Installation and Setup
 
 ### 1. Clone the Repository
 
 ```bash
-$ git clone https://github.com/LuUuFe/Flask-School-System.git
-$ cd Flask-School-System
+$ git clone git@github.com:LuUuFe/Flask-Base-Structure.git
+$ cd Flask-Base-Structure
 ```
 
 ### 2. Create a Virtual Environment
@@ -83,7 +73,6 @@ Flask-School-System/
 |   |-- templates/        # HTML files
 |   |-- static/           # Static files (CSS, JS, images)
 |   |-- config.py         # Application configuration
-|   |-- seed.py           # Data generator
 |
 |-- instance/
 |   |-- data.db           # Database (SQLite)
